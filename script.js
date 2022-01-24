@@ -85,3 +85,11 @@ var secondToLastLetterOfLastName = lastName[lastName.length - 2];
 // console.log(secondToLastLetterOfLastName);
 
 
+// WORD BLANKS
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+  var result = "";
+  result += "The " + myAdjective + " " + myNoun + " " + myVerb + " " + "to the store " + myAdverb;
+  return result;
+}
+// console.log(wordBlanks("dog", "big", "run", "quickly"));
+// console.log(wordBlanks("bike", "slow", "flew", "slowly"));
