@@ -63,3 +63,8 @@ var myName = "Celine Han";
 var myString = "My name is " + myName + " and I am cool!";
 // console.log(myString);
 
+// APPENDING VARIABLES TO STRINGS
+var anAdjective = "awesome!";
+var ourStr = "IT Academy is ";
+ourStr += anAdjective;
+console.log(ourStr); 
