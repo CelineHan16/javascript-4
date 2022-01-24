@@ -67,4 +67,21 @@ var myString = "My name is " + myName + " and I am cool!";
 var anAdjective = "awesome!";
 var ourStr = "IT Academy is ";
 ourStr += anAdjective;
-console.log(ourStr); 
+// console.log(ourStr); 
+
+
+// LENGTH OF A STRING
+var lastNameLength = 0;
+var lastName = "Asanbekova";
+lastNameLength = lastName.length;
+// console.log(lastNameLength);
+
+
+// FIND THE NTH CHARACTER
+var lastName = "Asanbekova";
+var lastLetterOfLastName = lastName[lastName.length - 5];
+// console.log(lastLetterOfLastName);
+var secondToLastLetterOfLastName = lastName[lastName.length - 2];
+// console.log(secondToLastLetterOfLastName);
+
+
