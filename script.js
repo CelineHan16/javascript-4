@@ -109,7 +109,11 @@ var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13,14]];
 var myData = myArray[2][1]; //Access Multi-Dimensional Arrays: first - array, then - index in it
 // console.log(myData);
 var myBiasList = ["V", "J-Hope", "Han", "Lucas", "Park Chan"];
-myBiasList.push("Seonghwa", "Irene", "Lia", ["Nancy", "Kris"]);
+myBiasList.unshift("GD"); //adds to the begin
 // console.log(myBiasList);
-var removedFromMyBiasList = myBiasList.pop(); //deletes "Nancy" after it added above
+myBiasList.push("Seonghwa", "Irene", "Lia", ["Nancy", "Kris"]); //adds to the end of list
+// console.log(myBiasList);
+myBiasList.pop(); //deletes last index "Nancy", "Kris" after it was added above
+// console.log(myBiasList);
+myBiasList.shift(); //deletes first index "GD" after it was added above
 // console.log(myBiasList);
