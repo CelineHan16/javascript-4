@@ -105,3 +105,11 @@ var ourData = ourArray[2]; //Access Array Data
 // console.log(ourData); 
 ourArray[1] = 43; //Modify Array Data 
 // console.log(ourArray);
+var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13,14]];
+var myData = myArray[2][1]; //Access Multi-Dimensional Arrays: first - array, then - index in it
+// console.log(myData);
+var myBiasList = ["V", "J-Hope", "Han", "Lucas", "Park Chan"];
+myBiasList.push("Seonghwa", "Irene", "Lia", ["Nancy", "Kris"]);
+// console.log(myBiasList);
+var removedFromMyBiasList = myBiasList.pop(); //deletes "Nancy" after it added above
+// console.log(myBiasList);
