@@ -117,3 +117,19 @@ myBiasList.pop(); //deletes last index "Nancy", "Kris" after it was added above
 // console.log(myBiasList);
 myBiasList.shift(); //deletes first index "GD" after it was added above
 // console.log(myBiasList);
+var shoppingList = [["cereal", 3], ["milk", 2], ["bananas", 4], ["orange", 1], ["eggs", 10]];
+
+
+// WRITE REUSABLE WITH FUNCTIONS
+function ourReusableFunction() {
+  console.log("Hello, World"); //the message in the function
+}
+ourReusableFunction(); //function is just called, we can do it any time
+function greeting() {
+  alert("Welcome, buddy!");
+}
+greeting();
+function proofOfAge() {
+  confirm("Please review!");
+}
+proofOfAge();
