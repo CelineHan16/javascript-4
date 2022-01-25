@@ -93,3 +93,15 @@ function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
 }
 // console.log(wordBlanks("dog", "big", "run", "quickly"));
 // console.log(wordBlanks("bike", "slow", "flew", "slowly"));
+
+
+// ARRAYs
+var ourArray = ["Celine", 17];
+// console.log(ourArray);
+var myArray = [["Jennie", 26], ["Lucas", 23]]; //Nest Arrays
+// console.log(myArray);
+var ourArray = [50, 60, 70];
+var ourData = ourArray[2]; //Access Array Data
+// console.log(ourData); 
+ourArray[1] = 43; //Modify Array Data 
+// console.log(ourArray);
