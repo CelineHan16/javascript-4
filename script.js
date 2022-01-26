@@ -166,3 +166,13 @@ function myLocalScope() {
 }
 // myLocalScope(); //outputs 5, that's myVar
 // console.log(myVar); //not working, refferenceError, isn't defined
+
+// GLOBAL vs. LOCAL SCOPE IN FUNCTIONS
+// if gl. and loc. have same names the LOCAL takes president over the global variable
+var outerWear = "T-Shirt"; //global, bc it's declared outside of the function
+function myOutfit() {
+  var outerWear = "Sweater"; //local, it's declared inside the function
+  return outerWear;
+}
+console.log(myOutfit()); //here we console the local variable
+console.log(outerWear); //here we console the global variable
