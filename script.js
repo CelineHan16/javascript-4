@@ -158,3 +158,11 @@ function fun2() {
 }
 // fun1();
 // fun2();
+
+// LOCAL SCOPE
+function myLocalScope() {
+  var myVar = 5;
+  console.log(myVar);
+}
+// myLocalScope(); //outputs 5, that's myVar
+// console.log(myVar); //not working, refferenceError, isn't defined
