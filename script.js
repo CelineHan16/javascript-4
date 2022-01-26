@@ -130,13 +130,31 @@ function greeting() {
 }
 greeting();
 function request() {
-  // confirm("Please enjoy and leave review! Do you permit notifications?");
+  confirm("Please enjoy and leave review! Do you permit notifications?");
 }
-request();
-
+// request();
 
 // ARGUMENTS
 function args(a, b) {
   console.log(a - b);
 }
-args(4, 9);
+// args(4, 9);
+
+
+// GLOBAL SCOPES
+var myGlobal = 10;
+function fun1() {
+  oopsGlobal = 5;
+}
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+// fun1();
+// fun2();
