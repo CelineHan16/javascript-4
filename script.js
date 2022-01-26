@@ -126,10 +126,17 @@ function ourReusableFunction() {
 }
 ourReusableFunction(); //function is just called, we can do it any time
 function greeting() {
-  alert("Welcome, buddy!");
+  // alert("Welcome, bestie!");
 }
 greeting();
-function proofOfAge() {
-  confirm("Please review!");
+function request() {
+  // confirm("Please enjoy and leave review! Do you permit notifications?");
 }
-proofOfAge();
+request();
+
+
+// ARGUMENTS
+function args(a, b) {
+  console.log(a - b);
+}
+args(4, 9);
