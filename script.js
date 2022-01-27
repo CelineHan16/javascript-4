@@ -174,5 +174,47 @@ function myOutfit() {
   var outerWear = "Sweater"; //local, it's declared inside the function
   return outerWear;
 }
-console.log(myOutfit()); //here we console the local variable
-console.log(outerWear); //here we console the global variable
+// console.log(myOutfit()); //here we console the local variable
+// console.log(outerWear); //here we console the global variable
+
+// RETURN A VALUE FROM A FUNCTION
+function minusSeven(num) {
+  return num - 7;
+}
+// console.log(minusSeven(12));
+function timesFive(num) {
+  return num * 5;
+}
+// console.log(timesFive(2));
+
+// UNDEFINED VALUE RETURNED
+var sum = 0;
+function addThree() {
+  sum = sum + 3;
+}
+// console.log(addThree(2)); //UNDEFINED
+function addFive() {
+  sum += 5;
+}
+// console.log(addFive(2)); //UNDEFINED
+
+// ASSIGNMENT WITH THE RETURNED VALUE
+var changed = 0;
+
+function change(num) {
+  return (num + 5) / 3; 
+}
+// changed = change(10);
+// console.log(changed);
+
+
+// STAND IN LINE
+function nextInLine(arr, item) {
+  arr.push(item);
+
+  return arr.shift();
+}
+var testArr =[1,2,3,4,5];
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
