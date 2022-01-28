@@ -257,6 +257,48 @@ function golfScore(par, strokes) {
 }
 // console.log(golfScore(3, 2));
 
+
+// SWITCH STATEMENTS 
+function caseInSwitch(val) {
+  var answer = "";
+  switch(val) {
+    case 1: // it is like "if" operator
+      answer = "alpha";
+      break;
+    case 2:
+      answer = "betta";  
+      break;
+    case 3:
+      answer = "gamma";  
+      break;
+    case 4:
+      answer = "delta";  
+      break;        
+  }
+  return answer;
+}
+// console.log(caseInSwitch(4));
+
+function switchOfStuff(val) {
+  var answer = "";
+  switch (val) {
+    case "a":
+      answer = "apple";  
+      break;
+    case "b":
+      answer = "bisquites";  
+      break; 
+    case "c":
+      answer = "cinnamon";  
+      break;     
+    default: //it is like "else" operator
+      answer = "stuff";
+      break;  
+ }
+  return answer;
+}
+console.log(switchOfStuff("g"));
+
 // let sum = 0;
 
 // while (true) {
