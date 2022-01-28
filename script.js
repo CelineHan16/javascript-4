@@ -215,6 +215,36 @@ function nextInLine(arr, item) {
   return arr.shift();
 }
 var testArr =[1,2,3,4,5];
-console.log("Before: " + JSON.stringify(testArr));
-console.log(nextInLine(testArr, 6));
-console.log("After: " + JSON.stringify(testArr));
+// console.log("Before: " + JSON.stringify(testArr));
+// console.log(nextInLine(testArr, 6));
+// console.log("After: " + JSON.stringify(testArr));
+
+// AND / OR OPERATORS
+function testLogicalAnd(val) {
+  if (val <= 50 && val >= 25) { // && - "and" operator
+    return "Yeah";
+  }
+  return "No";
+}
+// console.log(testLogicalAnd(30));
+function testLogicalOr(val) {
+  if (val < 10 || val > 20) { // || - "or" operator
+    return "Outside";
+  }
+  return "Inside";
+}
+// console.log(testLogicalOr(16));
+
+
+// let sum = 0;
+
+// while (true) {
+
+//   let value = +prompt("number", '');
+
+//   if (!value) break; // (*)
+
+//   sum += value;
+
+// }
+// alert( 'Summa: ' + sum );
