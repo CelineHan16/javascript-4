@@ -352,3 +352,22 @@ var myDog = {
 myDog['bark'] = "woof!";
 myDog.bark = "bow-wow";
 // console.log(myDog.bark);
+delete myDog.tails; // here we deleted "tails" property
+// console.log(myDog.tails);
+
+function phoneticLookup(val) {
+  var result = "";
+
+  var lookup = {
+    alpha: "Adams",
+    bravo: "Boston",
+    charlie: "Chicago",
+    delta: "Denver",
+    echo: "Easy",
+    foxtrot: "Frank"
+  };
+  result = lookup[val];
+  return result;
+};
+// console.log(phoneticLookup("delta"));
+
