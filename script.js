@@ -322,15 +322,33 @@ function sequentalSizes(val) {
 }
 // console.log(sequentalSizes(10));
 
-// let sum = 0;
 
-// while (true) {
+/*let sum = 0;
 
-//   let value = +prompt("number", '');
+while (true) {
+  let value = +prompt("number", '');
+  if (!value) break; // (*)
+  sum += value;
+}
+alert( 'Summa: ' + sum ); */
 
-//   if (!value) break; // (*)
+// OBJECTS
+var testObj = {
+  12: "Math",
+  16: "Korean",
+  19: "IELTS"
+};
+var playerNumber = 16;
+var player = testObj[playerNumber];
+// console.log(player);
 
-//   sum += value;
-
-// }
-// alert( 'Summa: ' + sum );
+var myDog = {
+  "name": "Haenbeok",
+  "dog owner": "me",
+  "legs": 4,
+  "friends": ["everyone"]
+};
+// here we're adding new properties to object "myDog"; here's two variants
+myDog['bark'] = "woof!";
+myDog.bark = "bow-wow";
+// console.log(myDog.bark);
