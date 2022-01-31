@@ -371,3 +371,16 @@ function phoneticLookup(val) {
 };
 // console.log(phoneticLookup("delta"));
 
+var myObj = {
+  gift: "BTS Greeting",
+  pet: "plant",
+  bed: "sleigh"
+};
+function checkObj(checkProp) {
+  if (myObj.hasOwnProperty(checkProp)) {
+    return myObj[checkProp];
+  } else {
+    return "Not Found";
+  };
+};
+// console.log(checkObj("gift")); //yeeey bts greetings!
