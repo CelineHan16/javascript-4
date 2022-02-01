@@ -320,17 +320,59 @@ function sequentalSizes(val) {
   }
   return answer;
 }
-// console.log(sequentalSizes(10));
+// console.log(sequentalSizes(8));
+
+var a = 2 + 3;
+switch (a) {
+  case 3:
+    // alert( 'Маловато' );
+    break;
+  case 4:
+    // alert( 'В точку!' );
+    break;
+  case 5:
+    // alert( 'Перебор' );
+    break;
+  default:
+    // alert( "Нет таких значений" );
+};
+
+var a = "1";
+var b = 0;
+switch (+a) {
+  case b + 1:
+    // alert("Выполнится, т.к. значением +a будет 1, что в точности равно b+1");
+    break;
+
+  default:
+    // alert("Это не выполнится");
+};
+
+var a = 2 + 1;
+switch (a) {
+  case 4:
+    // alert('Правильно!');
+    break;
+
+  case 3: // (*) группируем оба case
+  case 5:
+    // alert('Неправильно!');
+    // alert("Может вам посетить урок математики?");
+    break;
+
+  default:
+    // alert('Результат выглядит странновато. Честно.');
+};
 
 
-/*let sum = 0;
+/* var sum = 0;
 
 while (true) {
   let value = +prompt("number", '');
   if (!value) break; // (*)
   sum += value;
 }
-alert( 'Summa: ' + sum ); */
+alert( 'Summa: ' + sum ); */ 
 
 // OBJECTS
 var testObj = {
@@ -408,4 +450,45 @@ var myMusic = [
       "SoundCloud"
     ]
   }
-]
+];
+// console.log(myMusic);
+
+
+// NESTED OBJECTS - вложенные объекты
+var myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+    },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+var gloveBoxContents = myStorage.car.inside["glove box"];
+// console.log(gloveBoxContents);
+
+// Accessing nested arrays
+var myPlants = [
+  {
+    type: "flowers",
+    list: [
+      "rose",
+      "tulip",
+      "dandelion"
+    ]
+  },
+  {
+    type: "trees",
+    list: [
+      "fir",
+      "pine",
+      "birch"
+    ]
+  }
+];
+
+var secondTree = myPlants[0].list[2];
+// console.log(secondTree);
+
