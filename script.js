@@ -384,3 +384,28 @@ function checkObj(checkProp) {
   };
 };
 // console.log(checkObj("gift")); //yeeey bts greetings!
+
+
+// MANIPULATING COMPLEX OBJECTS
+var myMusic = [
+  {
+    "artist": "Bang Christopher Chan",
+    "title": "I hate to admit",
+    "release_year": 2020,
+    "formats": [
+      "CD",
+      "8T",
+      "LP"
+    ],
+    "gold": true
+  },
+  {
+    "artist": "Jeon JungKook",
+    "title": "Still with You",
+    "release_year": 2020,
+    "formats": [
+      "YouTube Music",
+      "SoundCloud"
+    ]
+  }
+]
